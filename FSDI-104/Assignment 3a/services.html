@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1>Pet Cuts!</h1>
+            <h2>Keep em still</h2>
+            <div class="nav-links">
+                <div class="link"><a href="/index.html">Home</a></div>
+                <div class="link"><a href="/services.html">Services</a></div>
+                <div class="link"><a href="/pets.html">Pets</a></div>
+                <div class="link"><a href="/casualties.html">Casualties</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Form to get info about the pets-->
+        <div class="container">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="forms">
+                    <label for="species">Species:</label>
+                    <input type="text" name="species" id="petSpecies">
+                </div>
+                <div class="forms">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="name" id="petName">
+                </div>
+                <div class="forms">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" name="age" id="petAge">
+                </div>
+                <div class="forms">
+                    <label for="service">Service:</label>
+                    <select type="text" class="form-control" name="service" id="petService">
+                        <option value="" disabled selected>Select an Option Please</option>
+                        <option value="Nail Trim">Nail Trim</option>
+                        <option value="Hair Cut">Hair Cut</option>
+                        <option value="Shower">Shower</option>
+                        <option value="Full Service">Full Service</option>
+                    </select>
+                </div>
+                <div class="forms">
+                    <label for="contact">Phone:</label>
+                    <input type="text" class="form-control" name="contact" id="petContact">
+                </div>
+                <div class="forms">
+                    <label for="owner">Owner:</label>
+                    <input type="text" class="form-control" name="owner" id="petOwner">
+                </div>
+                <div class="forms">
+                    <label for="attitude">Attitude:</label>
+                    <input type="text" class="form-control" name="attitude" id="petAttitude">
+                </div>
+                <div class="forms">
+                    <label for="name">Health:</label>
+                    <input type="text" class="form-control" name="health" id="petHealth">
+                </div>
+            </form>
+
+        <!--Submit Button to call function-->
+            <input type="submit" onclick="Register();">
+
+        </div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>

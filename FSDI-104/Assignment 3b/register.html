@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js"></script>
+    <title>Assignment 3</title>
+</head>
+<body>
+        <header>
+            <div id="pets">
+                <i class="fas fa-dog"></i>
+            </div>
+            <h1>Pet Salon</h1>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="customers.html">Customers</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </header>
+        <div class="completed" id="completed"></div>
+        <main>
+            <h2>Book a Service</h2>
+            <form action="">
+                Name: <input type="text" id="name"><br><br>
+                Species: <input type="text" id="species"><br><br>
+                Age: <input type="text" id="age"><br><br>
+                Your Name: <input type="text" id="owner"><br><br>
+                Temperment: <select name="temperment" id="temperment">
+                    <option value="friendly">friendly</option>
+                    <option value="shy">shy</option>
+                    <option value="grumpy">grumpy</option>
+                </select><br><br>
+                Service: <select name="service" id="service">
+                            <option value="hair">hair</option>
+                            <option value="nails">nails</option>
+                            <option value="training">training</option>
+                        </select>
+            </form>
+            <button onclick=registerPet()>Submit</button>
+
+        </main>
+
+        <footer>
+            <h3>Charles Parmley</h3>
+            <h3>FSDI 104 Competency Report</h3>
+        </footer>
+        
+</body>
+</html>
